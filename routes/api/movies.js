@@ -71,19 +71,19 @@ router.post('/', (req, res) => {
 });
 
 // If you want to delete a specific movie you can uncomment this method
-router.delete('/:id', (req, res) => {
-    const id = req.params.id;
-    Movie.remove({_id: id})
-        .exec()
-        .then(movies => {
-            winston.log('info', `[API] - Movie has been removed [id:${id}]`);
-            res.status(200).json(movies);
-        })
-        .catch(error => {
-            winston.log('error', error);
-            res.status(500).json({
-                error: error
-            });
-        });
-});
-module.exports = router;
+// router.delete('/:id', (req, res) => {
+//     const id = req.params.id;
+//     Movie.remove({_id: id})
+//         .exec()
+//         .then(movies => {
+//             winston.log('info', `[API] - Movie has been removed [id:${id}]`);
+//             res.status(200).json(movies);
+//         })
+//         .catch(error => {
+//             winston.log('error', error);
+//             res.status(500).json({
+//                 error: error
+//             });
+//         });
+// });
+// module.exports = router;
