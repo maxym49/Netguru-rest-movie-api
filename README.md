@@ -1,7 +1,7 @@
 # Netguru-movie-api-task
 
 ### 1. Clone the repository
-### 2. Type in the console in project directory:
+### 2. Type in the console in the project directory:
 a) To install all dependencies:
 ```
 npm i 
