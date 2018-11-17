@@ -73,8 +73,8 @@ c) To run appliaction on localhost type:
 You can display the Rest-Movie-Api objects in the browser. Just type in the browser: 
 http://localhost:3001 
 
-----------
-----------
+
+***
 
 ### What did I use?
 - Express - it helps you in creating server-side web applications faster and smarter
