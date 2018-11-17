@@ -32,14 +32,14 @@ c) To run appliaction on localhost type:
     "title": "My favourite movie title"
   }
   
-----------
+
  #### b) GET /movies:
   Should fetch list of all movies already present in application database.
   Additional filtering, sorting is fully optional (BONUS points)
   
   ##### To GET the movies type http://localhost:3001/api/movies
 
-----------
+
  #### c) POST /comments:
   Request body should contain ID of movie already present in database, and comment text body.
   Comment should be saved to application database and returned in request response.
@@ -51,7 +51,7 @@ c) To run appliaction on localhost type:
     "comment": "My comment" 
   }
   
-----------
+
  #### d) GET /comments:
   Should fetch list of all comments present in application database.
   Should allow filtering comments by associated movie, by passing its ID.
@@ -62,12 +62,11 @@ c) To run appliaction on localhost type:
   type http://localhost:3001/api/comments/:movieId for example 5bedd3b16261c90820812f38
 
 
-----------
-
 ### 5. Bounus
 You can display the Rest-Movie-Api objects in the browser. Just type in the browser: 
 http://localhost:3001 
 
+----------
 ----------
 
 ### What did I use?
