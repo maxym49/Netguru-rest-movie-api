@@ -27,9 +27,11 @@ Task:
   Request response should include full movie object, along with all data fetched from external API.
   
   To POST the movies type http://localhost:3001/api/movies and add to the body the JSON object: 
+  
   {
     "title": "My favourite movie title"
   }
+  
 ----------
   GET /movies:
   Should fetch list of all movies already present in application database.
@@ -43,10 +45,12 @@ Task:
   Comment should be saved to application database and returned in request response.
 
   To POST the comments type http://localhost:3001/api/comments and add to the body the JSON object: 
+  
   {
     "movieId": "Movie id"
     "comment": "My comment" 
   }
+  
 ----------
   GET /comments:
   Should fetch list of all comments present in application database.
