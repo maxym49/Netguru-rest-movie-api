@@ -38,6 +38,7 @@ c) To run appliaction on localhost type:
 | POST          | https://netguru-movie-api.herokuapp.com/api/comments |  
 | GET           | https://netguru-movie-api.herokuapp.com/api/comments |  
 
+***
 
 #### a) POST /movies:
    Request body should contain only movie title, and its presence should be validated.
