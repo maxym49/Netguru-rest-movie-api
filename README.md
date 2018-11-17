@@ -9,12 +9,12 @@ npm i
 b) To run tests type:
 
 ```
- npm run dev
+ npm test 
 ```
 
 c) To run appliaction on localhost type:
 ```
- npm test
+ npm run dev
 ```
 ### 3. Finally  type in your browser localhost:3001
 
