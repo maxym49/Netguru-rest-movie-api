@@ -95,3 +95,9 @@ http://localhost:3001
 - Winston - [logs] more beautiful than console.log  
 - Mocha and supertest - to write some tests
 - Materialize - to style all ejs files
+
+*** 
+
+*If you want to display the JSON in the Chrome browser I recommend this extension:
+https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc
+
