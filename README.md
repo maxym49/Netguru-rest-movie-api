@@ -16,7 +16,7 @@ c) To run appliaction on localhost type:
 ```
  npm test
 ```
-### 3. Finally  type in your browser localhost:8081
+### 3. Finally  type in your browser localhost:3001
 
 ### 4. Now you can use the API with some tools like Postman requests:
 
