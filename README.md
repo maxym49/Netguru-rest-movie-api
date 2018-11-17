@@ -21,7 +21,7 @@ c) To run appliaction on localhost type:
 ### 4. Now you can use the API with some tools like Postman requests:
 
 
-####a) POST /movies:
+#### a) POST /movies:
    Request body should contain only movie title, and its presence should be validated.
    Based on passed title, other movie details should be fetched from http://www.omdbapi.com/ (or other similar, public movie database) -    and saved to application database.
    Request response should include full movie object, along with all data fetched from external API.
@@ -33,14 +33,14 @@ c) To run appliaction on localhost type:
   }
   
 ----------
- ####b) GET /movies:
+ #### b) GET /movies:
   Should fetch list of all movies already present in application database.
   Additional filtering, sorting is fully optional (BONUS points)
   
   ##### To GET the movies type http://localhost:3001/api/movies
 
 ----------
- ####c) POST /comments:
+ #### c) POST /comments:
   Request body should contain ID of movie already present in database, and comment text body.
   Comment should be saved to application database and returned in request response.
 
@@ -52,7 +52,7 @@ c) To run appliaction on localhost type:
   }
   
 ----------
- ####d) GET /comments:
+ #### d) GET /comments:
   Should fetch list of all comments present in application database.
   Should allow filtering comments by associated movie, by passing its ID.
   
