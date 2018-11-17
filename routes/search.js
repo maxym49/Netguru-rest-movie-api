@@ -20,14 +20,14 @@ router.post('/', (req, res) => {
         });
     }
     else {
-        Movie.findOne({userTitle: req.body.title.toString()}, (err, existingMovie) => {
+        Movie.findOne({userTitle: req.body.title.toString().toLowerCase()}, (err, existingMovie) => {
             if (!existingMovie) {
                 request(url, (err, response, body) => {
                     if (!err) {
                         const data = JSON.parse(body);
                         const movie = new Movie({
                             movie: data,
-                            userTitle: req.body.title.toString()
+                            userTitle: req.body.title.toString().toLowerCase()
                         });
                         movie.save().then(movies => {
                             if (movies) {

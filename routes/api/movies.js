@@ -31,18 +31,18 @@ router.post('/', (req, res) => {
     const url = 'http://www.omdbapi.com/?' + 'apikey=7345ff0f&t=' + req.body.title;
     if (!req.body.title) {
         res.json({
-            message: 'You need to fill the input!'
+            message: 'You need to fill the title property!'
         });
     }
     else {
-        Movie.findOne({userTitle: req.body.title.toString()}, (err, existingMovie) => {
+        Movie.findOne({userTitle: req.body.title.toString().toLowerCase()}, (err, existingMovie) => {
             if (!existingMovie) {
                 request(url, (err, response, body) => {
                     if (!err) {
                         const data = JSON.parse(body);
                         const movie = new Movie({
                             movie: data,
-                            userTitle: req.body.title.toString()
+                            userTitle: req.body.title.toString().toLowerCase()
                         });
                         movie.save().then(movies => {
                             if (movies) {
@@ -70,20 +70,20 @@ router.post('/', (req, res) => {
     }
 });
 
-// // If you want to delete a specific movie you can uncomment this method
-// router.delete('/:id', (req, res) => {
-//     const id = req.params.id;
-//     Movie.remove({_id: id})
-//         .exec()
-//         .then(movies => {
-//             winston.log('info', `[API] - Movie has been removed [id:${id}]`);
-//             res.status(200).json(movies);
-//         })
-//         .catch(error => {
-//             winston.log('error', error);
-//             res.status(500).json({
-//                 error: error
-//             });
-//         });
-// });
+// If you want to delete a specific movie you can uncomment this method
+router.delete('/:id', (req, res) => {
+    const id = req.params.id;
+    Movie.remove({_id: id})
+        .exec()
+        .then(movies => {
+            winston.log('info', `[API] - Movie has been removed [id:${id}]`);
+            res.status(200).json(movies);
+        })
+        .catch(error => {
+            winston.log('error', error);
+            res.status(500).json({
+                error: error
+            });
+        });
+});
 module.exports = router;
