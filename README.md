@@ -20,12 +20,23 @@ c) To run appliaction on localhost type:
 
 ### 4. Now you can use the API with some tools like Postman requests:
 
+| Method        | URL                                |       
+| ------------- |:-------------:                     | 
+| POST          | http://localhost:3001/api/movies   | 
+| GET           | http://localhost:3001/api/movies   |  
+| POST          | http://localhost:3001/api/comments |  
+| GET           | http://localhost:3001/api/comments |  
+
+***
+
+#### Heroku
+
 | Method        | URL                         |       
 | ------------- |:-------------:              | 
-| POST          | localhost:3001/api/movies   | 
-| GET           | localhost:3001/api/movies   |  
-| POST          | localhost:3001/api/comments |  
-| GET           | localhost:3001/api/comments |   
+| POST          | netguru-movie-api.herokuapp.com/api/movies   | 
+| GET           | netguru-movie-api.herokuapp.com/api/movies   |  
+| POST          | netguru-movie-api.herokuapp.com/api/comments |  
+| GET           | netguru-movie-api.herokuapp.com/api/comments |  
 
 
 #### a) POST /movies:
