@@ -20,12 +20,12 @@ c) To run appliaction on localhost type:
 
 ### 4. Now you can use the API with some tools like Postman requests:
 
-| Method        | /             |       
-| ------------- |:-------------:| 
-| POST          | /api/movies   | 
-| GET           | /api/movies   |  
-| POST          | /api/comments |  
-| GET           | /api/comments |   
+| Method        | URL                         |       
+| ------------- |:-------------:              | 
+| POST          | localhost:3001/api/movies   | 
+| GET           | localhost:3001/api/movies   |  
+| POST          | localhost:3001/api/comments |  
+| GET           | localhost:3001/api/comments |   
 
 
 #### a) POST /movies:
