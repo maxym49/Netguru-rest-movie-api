@@ -70,7 +70,7 @@ router.post('/', (req, res) => {
     }
 });
 
-// If you want to delete a specific movie you can uncomment this method
+////If you want to delete a specific movie you can uncomment this method
 // router.delete('/:id', (req, res) => {
 //     const id = req.params.id;
 //     Movie.remove({_id: id})
