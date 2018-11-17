@@ -1,0 +1,9 @@
+package-lock.json
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+vcs.xml
+

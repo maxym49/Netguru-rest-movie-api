@@ -1,0 +1,29 @@
+{
+  "name": "rest-movie-api",
+  "version": "1.0.0",
+  "description": "Basic movie database interacting with external API",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "nodemon ./server"
+  },
+  "author": "Maks Konarski",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.12",
+    "morgan": "^1.9.1",
+    "proxyquire": "^2.1.0",
+    "request": "^2.88.0",
+    "sinon": "^7.1.1",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}

@@ -1,0 +1,23 @@
+body {
+    background: #000;
+}
+
+.card {
+    height: 800px;
+}
+
+.card-image, .card-image img {
+    height: 600px;
+}
+
+.row {
+    margin-top: 200px;
+}
+input.waves-button-input {
+    color: #ffffff;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 80px 0;
+}

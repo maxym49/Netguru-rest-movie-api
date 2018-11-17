@@ -1,0 +1,50 @@
+<% include ./partials/header.ejs %>
+
+<div class="container">
+    <div class="row">
+        <h1 class="center-align" style="color: #ffffff">List of Comments</h1>
+        <% comments.forEach(function(comment){ %>
+        <p class="flow-text" style="color: #ffffff">
+            Comment's text:
+            <%= comment.text %>
+            <br>
+            Comment's ID:
+            <%= comment.id %>
+            <br>
+            Associated Movie's ID:
+            <%= comment.movieId %>
+        </p>
+        <% }); %>
+    </div>
+    <div class="row">
+        <form target="_blank" style="display: inline-block; margin: 0 20px " action="/comments/comment" method="POST">
+        <h3 class="left" style="color: #ffffff; display: block; width: 100%">Filter the comment by movie's id</h3>
+        <div class="input-field col s6">
+            <i class="material-icons prefix">fingerprint</i>
+            <input name="movieIdentify" id="icon_prefix" type="text" class="validate" style="color: #ffffff" required>
+            <label for="icon_prefix">Movie ID</label>
+            <button class="btn-large waves-effect waves-light green accent-4" type="submit" name="action" style="margin: 40px 0; display: block">Filter
+                <i class="material-icons right">search</i>
+            </button>
+        </div>
+        </form>
+    </div>
+
+    <div class="btn-wrapper">
+        <form style="display: inline-block; margin: 0 20px " action="/movies" method="GET">
+            <button class="btn-large waves-effect waves-light" type="submit" name="action">
+                <i class="material-icons left">arrow_back</i>
+                Back to Movies
+            </button>
+        </form>
+        <form target="_blank" style="display: inline-block; margin: 0 20px " action="api/comments" method="GET">
+            <button class="btn-large waves-effect waves-light red darken-2" type="submit" name="action">
+               Comments in JSON
+                <i class="material-icons right">arrow_forward</i>
+            </button>
+        </form>
+    </div>
+</div>
+
+
+<% include ./partials/footer.ejs %>

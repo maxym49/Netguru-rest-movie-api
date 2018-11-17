@@ -1,0 +1,17 @@
+<% include ./partials/header.ejs %>
+<div class="container">
+    <h1 class="center-align" style="color: #fff">
+        <i class="large center-align  material-icons">home</i>
+        <br>
+        Welcome on the Homepage!
+    </h1>
+    <div class="btn-wrapper ">
+        <form style="display: inline-block; margin: 20px 20px " action="/movies"
+              method="GET">
+            <button class="blue lighten-2 btn-large waves-effect waves-light red darken-2" type="submit" name="action">
+                See the movie list
+            </button>
+        </form>
+    </div>
+</div>
+<% include ./partials/footer.ejs %>
