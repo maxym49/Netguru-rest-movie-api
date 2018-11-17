@@ -31,12 +31,12 @@ c) To run appliaction on localhost type:
 
 #### Heroku
 
-| Method        | URL                         |       
-| ------------- |:-------------:              | 
-| POST          | netguru-movie-api.herokuapp.com/api/movies   | 
-| GET           | netguru-movie-api.herokuapp.com/api/movies   |  
-| POST          | netguru-movie-api.herokuapp.com/api/comments |  
-| GET           | netguru-movie-api.herokuapp.com/api/comments |  
+| Method        | URL                                                  |       
+| ------------- |:-------------:                                       | 
+| POST          | https://netguru-movie-api.herokuapp.com/api/movies   | 
+| GET           | https://netguru-movie-api.herokuapp.com/api/movies   |  
+| POST          | https://netguru-movie-api.herokuapp.com/api/comments |  
+| GET           | https://netguru-movie-api.herokuapp.com/api/comments |  
 
 
 #### a) POST /movies:
