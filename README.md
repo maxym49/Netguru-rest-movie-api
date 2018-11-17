@@ -20,31 +20,31 @@ c) To run appliaction on localhost type:
 
 ### 4. Now you can use the API with some tools like Postman requests:
 
-Task: 
-  POST /movies:
-  Request body should contain only movie title, and its presence should be validated.
-  Based on passed title, other movie details should be fetched from http://www.omdbapi.com/ (or other similar, public movie database) -   and saved to application database.
-  Request response should include full movie object, along with all data fetched from external API.
+
+####a) POST /movies:
+   Request body should contain only movie title, and its presence should be validated.
+   Based on passed title, other movie details should be fetched from http://www.omdbapi.com/ (or other similar, public movie database) -    and saved to application database.
+   Request response should include full movie object, along with all data fetched from external API.
   
-  #### To POST the movies type http://localhost:3001/api/movies and add to the body the JSON object: 
+  ##### To POST the movies type http://localhost:3001/api/movies and add to the body the JSON object: 
   
   {
     "title": "My favourite movie title"
   }
   
 ----------
-  GET /movies:
+ ####b) GET /movies:
   Should fetch list of all movies already present in application database.
   Additional filtering, sorting is fully optional (BONUS points)
   
-  #### To GET the movies type http://localhost:3001/api/movies
+  ##### To GET the movies type http://localhost:3001/api/movies
 
 ----------
-  POST /comments:
+ ####c) POST /comments:
   Request body should contain ID of movie already present in database, and comment text body.
   Comment should be saved to application database and returned in request response.
 
-  #### To POST the comments type http://localhost:3001/api/comments and add to the body the JSON object: 
+  ##### To POST the comments type http://localhost:3001/api/comments and add to the body the JSON object: 
   
   {
     "movieId": "Movie id"
@@ -52,11 +52,11 @@ Task:
   }
   
 ----------
-  GET /comments:
+ ####d) GET /comments:
   Should fetch list of all comments present in application database.
   Should allow filtering comments by associated movie, by passing its ID.
   
-  #### To GET the comments type http://localhost:3001/api/comments
+  ##### To GET the comments type http://localhost:3001/api/comments
   
   If you want to filtering comments by associated movie, by passing its ID
   type http://localhost:3001/api/comments/:movieId for example 5bedd3b16261c90820812f38
