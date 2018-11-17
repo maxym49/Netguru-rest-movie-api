@@ -95,6 +95,7 @@ http://localhost:3001
 - Winston - [logs] more beautiful than console.log  
 - Mocha and supertest - to write some tests
 - Materialize - to style all ejs files
+- MongoDB & Mongoose - easy creating Schemas and and saving data in Mongo Atlas
 
 *** 
 
