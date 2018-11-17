@@ -45,7 +45,7 @@ c) To run appliaction on localhost type:
    Based on passed title, other movie details should be fetched from http://www.omdbapi.com/ (or other similar, public movie database) -    and saved to application database.
    Request response should include full movie object, along with all data fetched from external API.
   
-  ##### To POST the movies type http://localhost:3001/api/movies and add to the body the JSON object: 
+  ##### To POST the movies type http://localhost:3001/api/movies (or heroku url) and add to the body the JSON object: 
   
   {
     "title": "My favourite movie title"
@@ -63,7 +63,7 @@ c) To run appliaction on localhost type:
   Request body should contain ID of movie already present in database, and comment text body.
   Comment should be saved to application database and returned in request response.
 
-  ##### To POST the comments type http://localhost:3001/api/comments and add to the body the JSON object: 
+  ##### To POST the comments type http://localhost:3001/api/comments (or heroku url) and add to the body the JSON object: 
   
   {
     "movieId": "Movie id"
@@ -75,10 +75,10 @@ c) To run appliaction on localhost type:
   Should fetch list of all comments present in application database.
   Should allow filtering comments by associated movie, by passing its ID.
   
-  ##### To GET the comments type http://localhost:3001/api/comments
+  ##### To GET the comments type http://localhost:3001/api/comments (or heroku url)
   
   If you want to filtering comments by associated movie, by passing its ID
-  type http://localhost:3001/api/comments/:movieId for example 5bedd3b16261c90820812f38
+  type http://localhost:3001/api/comments/:movieId (or heroku url) - :movieId is for example 5bedd3b16261c90820812f38
 
 
 ### 5. Bounus
