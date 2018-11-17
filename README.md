@@ -1,7 +1,7 @@
 # Netguru-movie-api-task
 
-### H3 1. Clone the repository
-### H3 2. Type in the console in project directory:
+### 1. Clone the repository
+### 2. Type in the console in project directory:
 a) To install all dependencies:
 ```
 npm i 
@@ -16,9 +16,9 @@ c) To run appliaction on localhost type:
 ```
  npm test
 ```
-3. Finally  type in your browser localhost:8081
+### 3. Finally  type in your browser localhost:8081
 
-4. Now you can use the API with some tools like Postman requests:
+### 4. Now you can use the API with some tools like Postman requests:
 
 Task: 
   POST /movies:
@@ -64,7 +64,7 @@ Task:
 
 ----------
 
-5. Bounus
+### 5. Bounus
 You can display the Rest-Movie-Api objects in the browser. Just type in the browser: 
 http://localhost:3001 
 
