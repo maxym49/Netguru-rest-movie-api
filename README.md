@@ -20,6 +20,13 @@ c) To run appliaction on localhost type:
 
 ### 4. Now you can use the API with some tools like Postman requests:
 
+| Method        | /             |       
+| ------------- |:-------------:| 
+| POST          | /api/movies   | 
+| GET           | /api/movies   |  
+| POST          | /api/comments |  
+| GET           | /api/comments |   
+
 
 #### a) POST /movies:
    Request body should contain only movie title, and its presence should be validated.
