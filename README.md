@@ -1,4 +1,4 @@
-# Netguru-movie-api-task
+# API with omdbapi data
 
 ### 1. Clone the repository
 ### 2. Type in the console in the project directory:
